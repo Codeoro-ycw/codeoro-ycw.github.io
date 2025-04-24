@@ -1,109 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Codeoro YCW</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codeoro | Clean Web Design</title>
   <style>
+    :root {
+      --bg-light: #f9f9f9;
+      --bg-dark: #1a1a1a;
+      --text-light: #000000;
+      --text-dark: #f0f0f0;
+      --accent: #00bcd4;
+      --card-bg-light: #ffffff;
+      --card-bg-dark: #2a2a2a;
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f5f7fa;
-      color: #222;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: all 0.3s ease;
     }
 
     .container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 30px;
-      background-color: white;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg-light);
+      padding: 2rem;
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
     }
 
-    .logo {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
-    }
-
-    .logo img {
-      max-width: 180px;
-      height: auto;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-top: 40px;
-      font-size: 24px;
-    }
-
-    p {
-      line-height: 1.6;
+    h1, h2 {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.3rem;
     }
 
     ul {
-      line-height: 1.6;
-      margin-left: 20px;
+      padding-left: 1.2rem;
     }
 
-    .contact {
-      margin-top: 30px;
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
     }
 
-    .contact a {
-      color: #0077cc;
-      text-decoration: none;
+    .testimonial {
+      background: #e0f7fa;
+      padding: 1rem;
+      border-left: 5px solid var(--accent);
+      margin-top: 1rem;
+      border-radius: 8px;
     }
 
-    .footer {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 13px;
-      color: #aaa;
+    .logo {
+      display: block;
+      max-width: 200px;
+      margin: 0 auto 1rem auto;
     }
   </style>
 </head>
 <body>
+  <button class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light</button>
   <div class="container">
-    <div class="logo">
-      <img src="codeoro-logo.png" alt="Codeoro YCW Logo">
+    <img src="20250424_0232_Codeoro%20Tech%20Logo_simple_compose_01jsk7wg4heh9rc1ttcktcsh1b.png" class="logo" alt="Codeoro Logo">
+
+    <div class="card">
+      <h1>Codeoro</h1>
+      <p><strong>Clean websites. Thoughtfully built.</strong></p>
+      <p>Hi! I’m Yat Chun Wong, a high school student with a passion for coding and web design. Codeoro is an ongoing project dedicated to helping small businesses and organizations build their online presence.</p>
     </div>
 
-    <h1>Codeoro</h1>
-    <p><strong>Clean websites. Thoughtfully built.</strong></p>
-    <p>Hello! I’m Yat Chun Wong, a high school student with a passion for coding and web design. I started Codeoro as a summer project to help small businesses and organizations build their first websites.</p>
+    <div class="card">
+      <h2>What I Offer</h2>
+      <ul>
+        <li><strong>1-page Website:</strong> A clean, mobile-friendly site for small businesses or personal use</li>
+        <li><strong>Multi-page Sites:</strong> Up to 3 pages with navigation and consistent design</li>
+        <li><strong>Tech Help:</strong> Form setup, domain advice, email connection, etc.</li>
+      </ul>
+      <p><em>If you're serious about working together, reach out and let's talk about what you need.</em></p>
+    </div>
 
-    <h2>What I Offer</h2>
-    <ul>
-      <li><strong>1-page Website:</strong> A clean, mobile-friendly site for small businesses or personal use</li>
-      <li><strong>Multi-page Sites:</strong> Up to 3 pages with navigation and consistent design</li>
-      <li><strong>Tech Help:</strong> Form setup, domain advice, email connection, etc.</li>
-    </ul>
+    <div class="card">
+      <h2>Portfolio</h2>
+      <ul>
+        <li><a href="#">Local Artist Homepage (Demo)</a></li>
+        <li><a href="#">Restaurant Landing Page (Demo)</a></li>
+        <li><a href="#">Simple Contact Form (Demo)</a></li>
+      </ul>
+    </div>
 
-    <h2>Portfolio</h2>
-    <ul>
-      <li><a href="#">Local Artist Homepage (Demo)</a></li>
-      <li><a href="#">Restaurant Landing Page (Demo)</a></li>
-      <li><a href="#">Simple Contact Form (Demo)</a></li>
-    </ul>
-    <p><em>*Demo links will be added soon</em></p>
-
-    <h2>Let’s Connect</h2>
-    <div class="contact">
+    <div class="card">
+      <h2>Let’s Connect</h2>
       <p>Email: <a href="mailto:chun35446@gmail.com">chun35446@gmail.com</a><br>
       Phone: +1 443 542 1575</p>
     </div>
 
-    <div class="footer">
-      &copy; 2025 Codeoro YCW. All rights reserved.
+    <div class="card testimonial">
+      <p><strong>“Yat Chun helped me build a website that made my business look so much more professional — highly recommend!”</strong><br><em>- A happy client</em></p>
     </div>
   </div>
+
+  <script>
+    function toggleMode() {
+      const root = document.documentElement;
+      const light = getComputedStyle(root).getPropertyValue('--bg-light');
+      const dark = getComputedStyle(root).getPropertyValue('--bg-dark');
+      if (document.body.style.backgroundColor === dark) {
+        document.body.style.backgroundColor = light;
+        document.body.style.color = getComputedStyle(root).getPropertyValue('--text-light');
+        document.querySelectorAll('.card').forEach(el => el.style.backgroundColor = root.style.getPropertyValue('--card-bg-light'));
+      } else {
+        document.body.style.backgroundColor = dark;
+        document.body.style.color = getComputedStyle(root).getPropertyValue('--text-dark');
+        document.querySelectorAll('.card').forEach(el => el.style.backgroundColor = root.style.getPropertyValue('--card-bg-dark'));
+      }
+    }
+  </script>
 </body>
 </html>
