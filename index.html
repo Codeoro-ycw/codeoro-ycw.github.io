@@ -11,11 +11,22 @@
       margin: 0;
       padding: 0;
       color: #222;
-      background: #f9f9f9 url('codeoro-logo.png') no-repeat center center fixed;
-      background-size: 600px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
+      background: #f9f9f9;
+    }
+    .background-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('codeoro-logo.png') no-repeat center center;
+      background-size: 500px;
+      opacity: 0.05;
+      z-index: 0;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
     }
     header, section, footer {
       padding: 2rem;
@@ -83,72 +94,72 @@
   </style>
 </head>
 <body>
-
-  <nav>
-    <div style="font-weight: 600; font-size: 1.2rem;">Codeoro</div>
-    <div>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <section class="hero">
-    <h1>Clean Websites. Thoughtfully Built.</h1>
-    <p>I help small businesses get online — beautifully, affordably, and right now, even for free.</p>
-    <a href="#contact" class="cta-btn">Let’s Work Together</a>
-  </section>
-
-  <section id="about">
-    <h2 class="section-title">About Us</h2>
-    <p>We’re Yat Chun Wong and Pak Ching Wong — co-founders of Codeoro and student developers passionate about design and impact. Based in Maryland and Hong Kong, we collaborate across borders to bring thoughtful websites to life for small businesses, nonprofits, and individuals who need a digital presence.</p>
-    <p><strong>Yat Chun</strong> leads development and client communication in the U.S., while <strong>Pak Ching</strong> brings creative strategy and cross-cultural insight from Hong Kong. Together, we aim to empower communities with clean, accessible web solutions — now offered for free as part of our student initiative.</p>
-  </section>
-
-  <section id="services">
-    <h2 class="section-title">Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>1-Page Websites</h3>
-        <p>Perfect for personal brands or small shops. Clean layout, responsive design, and easy navigation.</p>
+  <div class="background-overlay"></div>
+  <div class="content">
+    <nav>
+      <div style="font-weight: 600; font-size: 1.2rem;">Codeoro</div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div class="card">
-        <h3>Multi-Page Sites</h3>
-        <p>Need more space? Up to 3 pages with consistent design, navigation, and style for growing businesses.</p>
-      </div>
-      <div class="card">
-        <h3>Tech Help</h3>
-        <p>Need help setting up a domain, contact form, or email system? I’ll guide or do it for you.</p>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <section id="portfolio">
-    <h2 class="section-title">Portfolio</h2>
-    <div class="portfolio">
-      <div class="card">
-        <h4>Luna Threads</h4>
-        <p>A fashion brand demo featuring smooth navigation and modern design.</p>
-        <a href="/demos/multipage/index.html" target="_blank">View Demo</a>
+    <section class="hero">
+      <h1>Clean Websites. Thoughtfully Built.</h1>
+      <p>I help small businesses get online — beautifully, affordably, and right now, even for free.</p>
+      <a href="#contact" class="cta-btn">Let’s Work Together</a>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Us</h2>
+      <p>We’re Yat Chun Wong and Pak Ching Wong — co-founders of Codeoro and student developers passionate about design and impact. Based in Maryland and Hong Kong, we collaborate across borders to bring thoughtful websites to life for small businesses, nonprofits, and individuals who need a digital presence.</p>
+      <p><strong>Yat Chun</strong> leads development and client communication in the U.S., while <strong>Pak Ching</strong> brings creative strategy and cross-cultural insight from Hong Kong. Together, we aim to empower communities with clean, accessible web solutions — now offered for free as part of our student initiative.</p>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">Services</h2>
+      <div class="services">
+        <div class="card">
+          <h3>1-Page Websites</h3>
+          <p>Perfect for personal brands or small shops. Clean layout, responsive design, and easy navigation.</p>
+        </div>
+        <div class="card">
+          <h3>Multi-Page Sites</h3>
+          <p>Need more space? Up to 3 pages with consistent design, navigation, and style for growing businesses.</p>
+        </div>
+        <div class="card">
+          <h3>Tech Help</h3>
+          <p>Need help setting up a domain, contact form, or email system? I’ll guide or do it for you.</p>
+        </div>
       </div>
-      <div class="card">
-        <h4>One-Page Sample</h4>
-        <p>A quick-loading, mobile-optimized single-page site built for clarity and ease.</p>
-        <a href="/demos/singlepage/index.html" target="_blank">View Demo</a>
+    </section>
+
+    <section id="portfolio">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio">
+        <div class="card">
+          <h4>Luna Threads</h4>
+          <p>A fashion brand demo featuring smooth navigation and modern design.</p>
+          <a href="/demos/multipage/index.html" target="_blank">View Demo</a>
+        </div>
+        <div class="card">
+          <h4>One-Page Sample</h4>
+          <p>A quick-loading, mobile-optimized single-page site built for clarity and ease.</p>
+          <a href="/demos/singlepage/index.html" target="_blank">View Demo</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <h2 class="section-title">Let’s Connect</h2>
-    <p>Email us at <strong><a href="mailto:chun35446@gmail.com">chun35446@gmail.com</a></strong> or DM us on GitHub. We’d love to hear about your project.</p>
-  </section>
+    <section id="contact">
+      <h2 class="section-title">Let’s Connect</h2>
+      <p>Email us at <strong><a href="mailto:chun35446@gmail.com">chun35446@gmail.com</a></strong> or DM us on GitHub. We’d love to hear about your project.</p>
+    </section>
 
-  <footer>
-    <p>© 2025 Codeoro — Founded by Yat Chun Wong & Pak Ching Wong</p>
-  </footer>
-
+    <footer>
+      <p>© 2025 Codeoro — Founded by Yat Chun Wong & Pak Ching Wong</p>
+    </footer>
+  </div>
 </body>
 </html>
-
