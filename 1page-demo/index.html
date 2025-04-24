@@ -2,65 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>1-Page Website Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codeoro | Clean Web Design</title>
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+      --accent: #00bfff;
+      --card: #f5f5f5;
+    }
+
+    body.dark-mode {
+      --bg: #1e1e1e;
+      --text: #ffffff;
+      --card: #2c2c2c;
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background-color 0.3s, color 0.3s;
     }
+
     header {
-      background-color: #007acc;
-      color: white;
-      padding: 2rem;
       text-align: center;
+      padding: 20px;
     }
-    section {
-      padding: 2rem;
-      max-width: 800px;
+
+    .logo {
+      width: 120px;
+      height: auto;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: var(--accent);
+      border: none;
+      border-radius: 20px;
+      color: #fff;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 700px;
       margin: auto;
+      padding: 20px;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.25rem;
-      background-color: #007acc;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
+
+    .card {
+      background-color: var(--card);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
+    h1, h2 {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
     footer {
       text-align: center;
-      padding: 1rem;
-      background-color: #e0efff;
-      font-size: 0.9rem;
+      margin: 40px 0 20px;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: var(--accent);
     }
   </style>
 </head>
 <body>
+  <button class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light</button>
+
   <header>
-    <h1>Demo: 1-Page Business Website</h1>
-    <p>Clean. Simple. Mobile-Friendly.</p>
+    <img src="codeoro-logo.png" alt="Codeoro Logo" class="logo" />
   </header>
 
-  <section>
-    <h2>About This Demo</h2>
-    <p>This is a working example of the 1-page website package I offer at Codeoro. It’s perfect for small businesses, freelancers, or personal brands who want a professional presence online — fast and effective.</p>
+  <div class="container">
+    <div class="card">
+      <h1>Codeoro</h1>
+      <h3>Clean websites. Thoughtfully built.</h3>
+      <p>Hi! I’m Yat Chun Wong, a high school student with a passion for coding and web design. Codeoro is an ongoing project dedicated to helping small businesses and organizations build their online presence.</p>
+    </div>
 
-    <h2>What’s Included?</h2>
-    <ul>
-      <li>Clean design with mobile-first layout</li>
-      <li>Contact button for email or messaging</li>
-      <li>Fast loading with no extra fluff</li>
-    </ul>
+    <div class="card">
+      <h2>What I Offer</h2>
+      <ul>
+        <li><strong>1-page Website:</strong> A clean, mobile-friendly site for small businesses or personal use</li>
+        <li><strong>Multi-page Sites:</strong> Up to 3 pages with navigation and consistent design</li>
+        <li><strong>Tech Help:</strong> Form setup, domain advice, email connection, etc.</li>
+        <li><em>All services are customizable based on what you need. Let’s discuss your vision and bring it to life!</em></li>
+      </ul>
+    </div>
 
-    <a href="mailto:chun35446@gmail.com" class="btn">Contact Me</a>
-  </section>
+    <div class="card">
+      <h2>Portfolio</h2>
+      <p><em>*Demo sites to be added soon</em></p>
+      <ul>
+        <li><a href="1page-demo/index.html" target="_blank">Local Artist Homepage (Demo)</a></li>
+        <li><a href="multi-demo/index.html" target="_blank">Restaurant Landing Page (Demo)</a></li>
+        <li><a href="techhelp-demo/index.html" target="_blank">Simple Contact Form (Demo)</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Let’s Connect</h2>
+      <p>Email: <a href="mailto:chun35446@gmail.com">chun35446@gmail.com</a></p>
+      <p>Phone: +1 443 542 1575</p>
+    </div>
+  </div>
 
   <footer>
-    &copy; 2025 Codeoro · 1-Page Demo
+    &copy; 2025 Codeoro. All rights reserved.
   </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>
