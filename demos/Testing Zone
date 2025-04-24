@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codeoro — Clean Websites for Small Businesses</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background: #f9f9f9;
+    }
+    header, section, footer {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta-btn {
+      padding: 0.75rem 1.5rem;
+      background: #222;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #222;
+      padding-left: 0.5rem;
+    }
+    .services, .portfolio {
+      display: grid;
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div><strong>Codeoro</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Clean Websites. Thoughtfully Built.</h1>
+    <p>Hi! I’m Yat Chun Wong, a high school student with a passion for coding and design. I help small businesses get online — beautifully and affordably.</p>
+    <a href="#contact" class="cta-btn">Let’s Work Together</a>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I’m a student developer based in Ellicott City, MD, and I love turning ideas into real, useful websites. Codeoro is my way of helping local businesses grow through clean, responsive, and personalized web design.</p>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>1-Page Websites</h3>
+        <p>Perfect for personal brands or small shops. Clean layout, responsive design, and easy navigation.</p>
+      </div>
+      <div class="card">
+        <h3>Multi-Page Sites</h3>
+        <p>Need more space? Up to 3 pages with consistent design, navigation, and style for growing businesses.</p>
+      </div>
+      <div class="card">
+        <h3>Tech Help</h3>
+        <p>Need help setting up a domain, contact form, or email system? I’ll guide or do it for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="portfolio">
+      <div class="card">
+        <h4>Luna Threads</h4>
+        <p>A fashion brand demo featuring smooth navigation and modern design.</p>
+        <a href="/demos/multipage/index.html" target="_blank">View Demo</a>
+      </div>
+      <div class="card">
+        <h4>One-Page Sample</h4>
+        <p>A quick-loading, mobile-optimized single-page site built for clarity and ease.</p>
+        <a href="/demos/singlepage/index.html" target="_blank">View Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Let’s Connect</h2>
+    <p>Email me at <strong><a href="mailto:chun35446@gmail.com">chun35446@gmail.com</a></strong> or DM me on GitHub. I’d love to hear about your project.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Codeoro by Yat Chun Wong</p>
+  </footer>
+
+</body>
+</html>
