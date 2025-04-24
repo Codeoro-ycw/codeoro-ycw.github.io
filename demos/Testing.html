@@ -3,75 +3,201 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Codeoro - Simple Digital Solutions</title>
-
-  <!-- ✅ Use relative path for CSS -->
-  <link rel="stylesheet" href="./assets/main.min.css" />
-
-  <!-- ✅ Favicon (optional) -->
-  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <title>Codeoro — Clean Websites for Small Businesses</title>
+  <meta name="description" content="Codeoro is a student-run web design studio creating clean, affordable websites for small businesses and nonprofits." />
+  <meta name="author" content="Yat Chun Wong & Pak Ching Wong" />
+  <link rel="stylesheet" href="./assets/main.css" />
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background: #f9f9f9;
+    }
+    .background-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('./assets/codeoro-logo.png') no-repeat center center;
+      background-size: 500px;
+      opacity: 0.05;
+      z-index: 0;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    header, section, footer {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      z-index: 2;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta-btn {
+      padding: 0.9rem 2rem;
+      background: #0070f3;
+      color: white;
+      border: none;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #0070f3;
+      padding-left: 0.5rem;
+    }
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1.25rem;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #222;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      z-index: 5;
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <!-- ✅ Accessible Navigation -->
-  <header>
-    <nav aria-label="Main Navigation">
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <div class="background-overlay" role="presentation" aria-hidden="true"></div>
+  <div class="content">
+    <nav role="navigation" aria-label="Main navigation">
+      <div style="font-weight: 700; font-size: 1.3rem; color: #0070f3;">Codeoro</div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
-  </header>
 
-  <!-- ✅ Responsive hero section -->
-  <section id="hero">
-    <h1>Welcome to Codeoro</h1>
-    <p>Helping small businesses build a smart online presence.</p>
-    <a href="#contact" class="btn" aria-label="Get a Free Consultation">Get a Free Consultation</a>
-  </section>
+    <section class="hero">
+      <h1>Clean Websites. Thoughtfully Built.</h1>
+      <p>I help small businesses get online — beautifully, affordably, and right now, even for free.</p>
+      <a href="#contact" class="cta-btn">Get a Free Consultation</a>
+    </section>
 
-  <!-- ✅ Example Service Section -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <article>
-        <h3>1-Page Website</h3>
-        <p>A clean, mobile-friendly site perfect for startups.</p>
-      </article>
-      <article>
-        <h3>Multi-Page Site</h3>
-        <p>Up to 3 pages with navigation and consistent branding.</p>
-      </article>
-    </div>
-  </section>
+    <section id="about">
+      <h2 class="section-title">About Us</h2>
+      <p>We’re Yat Chun Wong and Pak Ching Wong — co-founders of Codeoro and student developers passionate about design and impact. Based in Maryland and Hong Kong, we collaborate across borders to bring thoughtful websites to life for small businesses, nonprofits, and individuals who need a digital presence.</p>
+      <p><strong>Yat Chun</strong> leads development and client communication in the U.S., while <strong>Pak Ching</strong> brings creative strategy and cross-cultural insight from Hong Kong. Together, we aim to empower communities with clean, accessible web solutions — now offered for free as part of our student initiative.</p>
+    </section>
 
-  <!-- ✅ Portfolio -->
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <img src="./assets/luna-threads.png" alt="Luna Threads Sample Website" loading="lazy" />
-  </section>
+    <section id="services">
+      <h2 class="section-title">Services</h2>
+      <div class="services">
+        <div class="card">
+          <h3>1-Page Websites</h3>
+          <p>Clean and mobile-friendly single-page sites ideal for small businesses, portfolios, or landing pages. Includes design, content layout, and contact form setup.</p>
+        </div>
+        <div class="card">
+          <h3>Multi-Page Sites</h3>
+          <p>Custom websites with up to 3 fully designed pages (e.g., Home, About, Services). Includes consistent navigation, responsive layout, and optimized performance.</p>
+        </div>
+        <div class="card">
+          <h3>Tech Help</h3>
+          <p>Assistance with domain setup, email configuration, contact forms, SEO basics, and more. Get support setting up the tech stack that powers your website.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- ✅ Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:chun35446@gmail.com">chun35446@gmail.com</a></p>
-    <form aria-label="Contact form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required />
+    <section id="portfolio">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio">
+        <div class="card">
+          <h4>Luna Threads</h4>
+          <p>A fashion brand demo featuring smooth navigation and modern design. Tools used: HTML, CSS, responsive grid layout.</p>
+          <a href="/demos/multipage/index.html" target="_blank">View Demo</a>
+        </div>
+        <div class="card">
+          <h4>One-Page Sample</h4>
+          <p>A quick-loading, mobile-optimized single-page site built for clarity and ease. Lightweight and perfect for small projects.</p>
+          <a href="/demos/singlepage/index.html" target="_blank">View Demo</a>
+        </div>
+      </div>
+    </section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" required />
+    <section id="contact">
+      <h2 class="section-title">Let’s Connect</h2>
+      <p>Email us at <strong><a href="mailto:chun35446@gmail.com">chun35446@gmail.com</a></strong> or DM us on GitHub. We’d love to hear about your project or provide a free consultation.</p>
+    </section>
 
-      <label for="message">Message:</label>
-      <textarea id="message" required></textarea>
-
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <!-- ✅ Minified JS file -->
-  <script src="./assets/main.min.js" defer></script>
+    <footer>
+      <p>© 2025 Codeoro — Founded by Yat Chun Wong & Pak Ching Wong</p>
+    </footer>
+  </div>
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
 </body>
 </html>
+
 
