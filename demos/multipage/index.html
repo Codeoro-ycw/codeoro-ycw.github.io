@@ -3,21 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Codeoro</title>
+  <title>Home | Luna Threads</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00bfff;
+    }
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    h1, h2 {
+      color: #222;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Codeoro</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1>Luna Threads</h1>
+    <p>Minimalist Streetwear for Modern Style</p>
   </header>
-  <main>
-    <h2>Clean Websites Built for You</h2>
-    <p>This is the homepage. Let us help you build your first professional web presence.</p>
-  </main>
+
+  <nav>
+    <a href="../home/">Home</a>
+    <a href="../about/">About</a>
+    <a href="../services/">Lookbook</a>
+    <a href="../contact/">Contact</a>
+  </nav>
+
+  <div class="content">
+    <div class="card">
+      <h2>Welcome to Luna Threads</h2>
+      <p>Step into style with Luna Threads — your go-to brand for clean, modern, and eco-conscious streetwear. We focus on timeless design, comfort, and sustainable materials that align with your values and lifestyle.</p>
+    </div>
+
+    <div class="card">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Locally designed and responsibly manufactured</li>
+        <li>Curated seasonal drops and limited collections</li>
+        <li>Inclusive sizing for everyone</li>
+        <li>Exclusive membership perks and early access</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
