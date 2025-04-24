@@ -7,15 +7,11 @@
   <meta name="description" content="Codeoro offers simple websites and tech help for small businesses and organizations.">
   <meta name="keywords" content="Codeoro, web design, tech help, GitHub Pages, small business websites">
   <meta name="author" content="Codeoro Team">
-
-  <!-- Open Graph (social sharing) -->
   <meta property="og:title" content="Codeoro | Simple Website & Tech Help" />
   <meta property="og:description" content="Affordable and effective website solutions for small businesses." />
   <meta property="og:image" content="https://codeoro-ycw.github.io/codeoro-logo.png" />
   <meta property="og:url" content="https://codeoro-ycw.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -29,7 +25,6 @@
     ]
   }
   </script>
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
   <style>
     * { scroll-behavior: smooth; }
@@ -136,6 +131,24 @@
       font-size: 1rem;
       z-index: 5;
     }
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .skip-link:focus {
+      left: 10px;
+      top: 10px;
+      width: auto;
+      height: auto;
+      padding: 8px;
+      background: #0070f3;
+      color: white;
+      z-index: 100;
+    }
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
@@ -150,10 +163,10 @@
     }
   </style>
 </head>
-
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
   <div class="background-overlay" role="presentation" aria-hidden="true"></div>
-  <div class="content">
+  <main id="main" class="content" role="main" tabindex="-1">
     <nav role="navigation" aria-label="Main navigation">
       <div style="font-weight: 700; font-size: 1.3rem; color: #0070f3;">Codeoro</div>
       <div>
@@ -199,7 +212,7 @@
       <div class="portfolio">
         <div class="card">
           <h4>Luna Threads</h4>
-          <p>A fashion brand demo featuring smooth navigation and modern design. Tools used: HTML, CSS, responsive grid layout.</p>
+          <p>A fashion brand demo featuring smooth navigation and modern design. I designed the layout using HTML/CSS Grid and implemented responsive styling. I also wrote content and simulated product listings for realism.</p>
           <a href="/demos/multipage/index.html" target="_blank">View Demo</a>
         </div>
         <div class="card">
@@ -218,8 +231,9 @@
     <footer>
       <p>© 2025 Codeoro — Founded by Yat Chun Wong & Pak Ching Wong</p>
     </footer>
-  </div>
+  </main>
   <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
 </body>
 </html>
+
 
