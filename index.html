@@ -1,40 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codeoro YCW</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #222;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      max-width: 180px;
+      height: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      line-height: 1.6;
+      margin-left: 20px;
+    }
+
+    .contact {
+      margin-top: 30px;
+    }
+
+    .contact a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
+</head>
 <body>
-  <div class="card">
+  <div class="container">
+    <div class="logo">
+      <img src="codeoro-logo.png" alt="Codeoro YCW Logo">
+    </div>
+
     <h1>Codeoro</h1>
     <p><strong>Clean websites. Thoughtfully built.</strong></p>
     <p>Hello! I’m Yat Chun Wong, a high school student with a passion for coding and web design. I started Codeoro as a summer project to help small businesses and organizations build their first websites.</p>
 
-    <div class="section">
-      <h2>What I Offer</h2>
-      <ul>
-        <li><strong>1-page Website:</strong> A clean, mobile-friendly site for small businesses or personal use</li>
-        <li><strong>Multi-page Sites:</strong> Up to 3 pages with navigation and consistent design</li>
-        <li><strong>Tech Help:</strong> Form setup, domain advice, email connection, etc.</li>
-      </ul>
-      <p style="font-size: 0.95rem; color: #777;"><em>If you're serious about working together, reach out and let's talk about what you need.</em></p>
-    </div>
+    <h2>What I Offer</h2>
+    <ul>
+      <li><strong>1-page Website:</strong> A clean, mobile-friendly site for small businesses or personal use</li>
+      <li><strong>Multi-page Sites:</strong> Up to 3 pages with navigation and consistent design</li>
+      <li><strong>Tech Help:</strong> Form setup, domain advice, email connection, etc.</li>
+    </ul>
 
-    <div class="section">
-      <h2>Portfolio</h2>
-      <ul>
-        <li><a href="#" target="_blank">Local Artist Homepage (Demo)</a></li>
-        <li><a href="#" target="_blank">Restaurant Landing Page (Demo)</a></li>
-        <li><a href="#" target="_blank">Simple Contact Form (Demo)</a></li>
-      </ul>
-      <p style="font-size: 0.9rem; color: #888;">*Demo links will be added soon</p>
-    </div>
+    <h2>Portfolio</h2>
+    <ul>
+      <li><a href="#">Local Artist Homepage (Demo)</a></li>
+      <li><a href="#">Restaurant Landing Page (Demo)</a></li>
+      <li><a href="#">Simple Contact Form (Demo)</a></li>
+    </ul>
+    <p><em>*Demo links will be added soon</em></p>
 
-    <div class="section">
-      <h2>Let’s Connect</h2>
+    <h2>Let’s Connect</h2>
+    <div class="contact">
       <p>Email: <a href="mailto:chun35446@gmail.com">chun35446@gmail.com</a><br>
-         Phone: +1 443 542 1575</p>
-      <p>Or tell me about your project using this quick form:</p>
-      <form action="https://formspree.io/f/mnqegvoz" method="POST">
-        <input type="text" name="name" placeholder="Your name" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
-        <input type="email" name="_replyto" placeholder="Your email" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
-        <textarea name="message" placeholder="What do you need help with?" required style="width:100%; padding:8px; height:80px;"></textarea><br>
-        <button type="submit" style="padding: 8px 16px; margin-top: 10px;">Send</button>
-      </form>
+      Phone: +1 443 542 1575</p>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Codeoro YCW. All rights reserved.
     </div>
   </div>
 </body>
+</html>
