@@ -4,8 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Codeoro — Clean Websites for Small Businesses</title>
+  <meta name="description" content="Codeoro is a student-run web design studio creating clean, affordable websites for small businesses and nonprofits." />
+  <meta name="author" content="Yat Chun Wong & Pak Ching Wong" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
   <style>
+    * {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
@@ -34,12 +39,15 @@
       margin: auto;
     }
     nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #ffffff;
       padding: 1rem 2rem;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      z-index: 2;
     }
     nav a {
       text-decoration: none;
@@ -91,6 +99,19 @@
       font-size: 0.9rem;
       margin-top: 3rem;
     }
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #222;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      z-index: 5;
+    }
   </style>
 </head>
 <body>
@@ -141,12 +162,12 @@
       <div class="portfolio">
         <div class="card">
           <h4>Luna Threads</h4>
-          <p>A fashion brand demo featuring smooth navigation and modern design.</p>
+          <p>A fashion brand demo featuring smooth navigation and modern design. Tools used: HTML, CSS, responsive grid layout.</p>
           <a href="/demos/multipage/index.html" target="_blank">View Demo</a>
         </div>
         <div class="card">
           <h4>One-Page Sample</h4>
-          <p>A quick-loading, mobile-optimized single-page site built for clarity and ease.</p>
+          <p>A quick-loading, mobile-optimized single-page site built for clarity and ease. Lightweight and perfect for small projects.</p>
           <a href="/demos/singlepage/index.html" target="_blank">View Demo</a>
         </div>
       </div>
@@ -161,5 +182,7 @@
       <p>© 2025 Codeoro — Founded by Yat Chun Wong & Pak Ching Wong</p>
     </footer>
   </div>
+  <a href="#top" class="back-to-top">↑</a>
 </body>
 </html>
+
