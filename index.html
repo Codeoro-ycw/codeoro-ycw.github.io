@@ -8,31 +8,14 @@
   <meta name="keywords" content="Codeoro, web design, tech help, GitHub Pages, small business websites" />
   <meta name="author" content="Codeoro Team" />
 
-  <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="Codeoro | Simple Website & Tech Help" />
   <meta property="og:description" content="Affordable and effective website solutions for small businesses." />
   <meta property="og:image" content="https://codeoro-ycw.github.io/codeoro-logo.png" />
   <meta property="og:url" content="https://codeoro-ycw.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Favicon -->
- <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
- <link rel="shortcut icon" href="favicon-16x16.png" type="image/png" />
-  
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Codeoro",
-    "url": "https://codeoro-ycw.github.io",
-    "logo": "https://codeoro-ycw.github.io/codeoro-logo.png",
-    "description": "Codeoro provides simple websites and tech support for small businesses.",
-    "sameAs": [
-      "https://github.com/Codeoro-ycw"
-    ]
-  }
-  </script>
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="shortcut icon" href="favicon-16x16.png" type="image/png" />
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
   <style>
@@ -121,6 +104,32 @@
       border-radius: 10px;
       box-shadow: 0 1px 6px rgba(0,0,0,0.08);
     }
+    .contact-form {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+      max-width: 600px;
+      margin-top: 1rem;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      background: #0070f3;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
     footer {
       text-align: center;
       color: #777;
@@ -172,7 +181,6 @@
     }
   </style>
 </head>
-
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
   <div class="background-overlay" role="presentation" aria-hidden="true"></div>
@@ -196,7 +204,6 @@
     <section id="about">
       <h2 class="section-title">About Us</h2>
       <p>We’re Yat Chun Wong and Pak Ching Wong — co-founders of Codeoro and student developers passionate about design and impact. Based in Maryland and Hong Kong, we collaborate across borders to bring thoughtful websites to life for small businesses, nonprofits, and individuals who need a digital presence.</p>
-      <p><strong>Yat Chun</strong> leads development and client communication in the U.S., while <strong>Pak Ching</strong> brings creative strategy and cross-cultural insight from Hong Kong. Together, we aim to empower communities with clean, accessible web solutions — now offered for free as part of our student initiative.</p>
     </section>
 
     <section id="services">
@@ -235,7 +242,13 @@
 
     <section id="contact">
       <h2 class="section-title">Let’s Connect</h2>
-      <p>Email us at <strong><a href="mailto:chun35446@gmail.com">chun35446@gmail.com</a></strong> or DM us on GitHub. We’d love to hear about your project or provide a free consultation.</p>
+      <p>Send us a message using the form below or email us at <strong><a href="mailto:chun35446@gmail.com">chun35446@gmail.com</a></strong>. We’ll get back to you within 24 hours.</p>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
 
     <footer>
@@ -245,6 +258,7 @@
   <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
 </body>
 </html>
+
 
 
 
